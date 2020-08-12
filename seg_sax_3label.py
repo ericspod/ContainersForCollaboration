@@ -95,8 +95,8 @@ def save_nifti(filename, output, affine, header):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("in_file", help="Optional input file, read from stdin in not given", nargs="?")
-    parser.add_argument("-o", dest="out_file", help="Optional output file, write to stdout if not given", nargs="?")
+    parser.add_argument("in_file", help="Optional input file, read from stdin if not given", nargs="?")
+    parser.add_argument("out_file", help="Optional output file, write to stdout if not given", nargs="?")
     args = parser.parse_args()
 
     # load the network, assigning it to the selected device
